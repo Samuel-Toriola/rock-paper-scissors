@@ -102,10 +102,10 @@ const displayWinner = function (results) {
     } else if (aiWins) {
       resultText.innerHTML = "You Lose";
       resultDiv[1].classList.toggle("winner");
-      scoreNumber.innerHTML = 0;
+      keepScore(-score);
     } else {
       resultText.innerHTML = "Draw";
-      scoreNumber.innerHTML = score;
+      keepScore(0);
     }
     resultWinner.classList.toggle("hidden");
     resultsDiv.classList.toggle("show-winner");
