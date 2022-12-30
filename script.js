@@ -105,7 +105,7 @@ const displayWinner = function (results) {
       scoreNumber.innerHTML = 0;
     } else {
       resultText.innerHTML = "Draw";
-      keepScore(0);
+      scoreNumber.innerHTML = score;
     }
     resultWinner.classList.toggle("hidden");
     resultsDiv.classList.toggle("show-winner");
